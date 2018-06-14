@@ -1,0 +1,20 @@
+XLite\Model\Payment\Method:
+  - service_name: PayuTurkey
+    class: Module\XC\PayuTurkey\Model\Payment\Processor\PayuTurkey
+    type: C
+    countries: [TR]
+    translations:
+      - code: en
+        name: PayU Turkey
+    settings:
+      - name: merchantid
+      - name: secretKey
+      - name: mode
+        value: test
+      - name: referencePrefix
+        value: xcart
+XLite\Model\LanguageLabel:
+  - { name: "PayU Turkey Merchant Id", translations: [{ code: en, label: "PayU Turkey Api Version" }] }
+  - { name: "PayU Turkey Secret Key", translations: [{ code: en, label: "PayU Turkey Secret Key" }] }
+  - { name: "PayU Turkey Test/Live mode", translations: [{ code: en, label: "PayU Turkey Test/Live mode" }] }
+  - { name: "PayU Turkey Merchant Reference Prefix", translations: [{ code: en, label: "PayU Turkey Merchant Reference Prefix" }] }
